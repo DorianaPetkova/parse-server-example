@@ -8,8 +8,7 @@ const __dirname = path.resolve();
 import http from 'http';
 
 export const config = {
-  databaseURI:
-    process.env.DATABASE_URI || process.env.MONGODB_URI || 'mongodb://localhost:27017/dev',
+  databaseURI: 'mongodb+srv://Indzhe:679234@cluster0.0pqevar.mongodb.net/<dbname>',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'myAppId',
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
